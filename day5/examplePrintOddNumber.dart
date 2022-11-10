@@ -4,8 +4,11 @@ void main(List<String> args) {
 int? number;
 
 for (var i = 0; i < 100; i++) {
-if(i%2!=0) number=i;
-{print(number);}
+
+  if(i%2!=0){
+    number=i; 
+    print(number);
+  }
 
 }
   

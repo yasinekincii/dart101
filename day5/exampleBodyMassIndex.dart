@@ -11,8 +11,8 @@ void main(List<String> args) {
 // 40 kg/m² üzerindeki sonuçlar: İdeal kilonun çok üstünde (morbid obez)
 
 //Vücut kitle indeksini hesaplayan kodu yazalım.
-double weight=75;
-double height=1.84;
+double weight=95;
+double height=1.85;
 double result;
 
 result=weight/(height*height);
