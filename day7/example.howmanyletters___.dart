@@ -1,13 +1,27 @@
+import 'dart:io';
+
 void main(List<String> args) {
- List<String>value=[]; 
-value[0]="yasin ekinci";
+ 
+ //Kullanıcının klavyeden girdiği string değerin kaç kelimeden oluştuğunu yazan dart kodunu yazalım.
+ 
+ print("lütfen bir metin giriniz");
+ String name =stdin.readLineSync().toString();
+
+List<String>name2=[];
+name2=name.split("");
+print(name2);
+print(name2.length-1);
 
 
 
-for (var i = value.length; i>=0; i--) {
-  if(i>=0){
-    print(i);
-    }
+
+
+
+
+
+
+
+
 }
 
 
@@ -20,4 +34,3 @@ for (var i = value.length; i>=0; i--) {
 
 
 
-}

@@ -13,6 +13,7 @@ void main(List<String> args) {
 
     liste1[i]=Random().nextInt(50);
     liste2[i]=Random().nextInt(50);
+    
   }
    print(liste1);
    print(liste2);
