@@ -11,7 +11,7 @@ numbers[3]= 3;
 for (var i = 0; i < numbers.length; i++) {
 
     if(numbers[i]<0){
-      numbers[i]=numbers[i]-2*numbers[i];
+      numbers[i]=numbers[i]-2*numbers[i];//numbers[i]=-numbers[i]
     }
     print(numbers[i]);
 }
