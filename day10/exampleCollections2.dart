@@ -1,8 +1,10 @@
 
+
 import 'dart:io';
 
 void main(List<String> args) {
-  
+  //Kullanıcının girmiş olduğu sayının dizide olup olmadığını bulan, varsa kaç adet bulunduğunu ekranda gösteren örneği yapınız.
+
  print("Enter a value");
   int value=int.parse(stdin.readLineSync()!);//baştaki int'e soru işareti gelirse non-safety 
   int piece=0;
@@ -23,8 +25,6 @@ void main(List<String> args) {
   else{
     print("$piece value is in list ");
   }
-
-
 
 
 
