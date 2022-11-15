@@ -11,21 +11,21 @@ for (var i = 1; i < 10; i++) {
       else if (j<10-i && i>=6) {
         stdout.write("*");   
     }
-        else{
-          stdout.write(" ");
-    }
-        
-    if (j>=i &&  i>=6) {
-      stdout.write("*");   
-    }
-      else if(j>=10-i && i<6){
-        stdout.write("*");   
+      else{
+        stdout.write(" ");
       }
-        else{
-         stdout.write(" ");
-  
-   
-        }
+        
+          if (j>=i &&  i>=6) {
+             stdout.write("*");   
+          }
+          else if(j>=10-i && i<6){
+             stdout.write("*");   
+          }
+          else{
+             stdout.write(" ");
+        
+        
+          }
 
   }
   print("\n");
