@@ -6,7 +6,7 @@ void main(List<String> args) {
   print("Lütfen şifrenizi giriniz");
 
   int password=1234;
-  int? value;
+  int value=0;//?
   int balance=100;
 
 
@@ -16,10 +16,14 @@ void main(List<String> args) {
     print("Girdiğiniz şifre yanlış, lütfen tekrar deneyiniz");
   }
   
-  while(pass==password){
-    print("Lütfen yapacağınız işlemi seçiniz \nPara yatırmak için:1 \nPara çekmek için:2\nHesap bakiyenizi kontrol etmek için:3\nÇıkış yapmak için:4");
-    int? value =int.parse(stdin.readLineSync()!);
+  if(pass==password){
     
+         
+    do{
+      print("Lütfen yapacağınız işlemi seçiniz \nPara yatırmak için:1 \nPara çekmek için:2\nHesap bakiyenizi kontrol etmek için:3\nÇıkış yapmak için:4");
+       
+       value =int.parse(stdin.readLineSync()!); 
+      
       if(value==1){
            print("Lütfen yatırmak istediğiniz para miktarını yazınız");
            int? mon=int.parse(stdin.readLineSync()!);
@@ -38,13 +42,21 @@ void main(List<String> args) {
                           else if(value==3){
                             print(balance);
                           }
+                          else if (value==4) {
+                                print("Sağlıklı günler dileriz");
+                                
+                          }
+                          else{
+                               print("Hatalı bir giriş yaptınız ");
+                          }
+                          
 
-  
-                              else if(value!=1 && value!=2 && value!=3){
-                                print("Hatalı değer girdiniz tekrar deneyiniz");
-                              }
-                             
-}
+    }   while( value<=3);
+                    
+                            
+                                    
+                        
+  }
                               
  
   }
