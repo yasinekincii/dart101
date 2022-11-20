@@ -7,7 +7,7 @@ void main(List<String> args) {
 int piece=0;
 List<String>citys=[];
 
-for (var i = 0; i < 20; i++) {
+for (var i = 0; i < 2; i++) {
   print("Şehir ismi giriniz");
   String city=stdin.readLineSync()!;
   citys.add(city);
@@ -15,13 +15,13 @@ for (var i = 0; i < 20; i++) {
       print("Sorgulayacağınız ili giriniz");
       String town=stdin.readLineSync()!;
 
-    for (var j = 0; j < 20; j++) { 
+for (var j = 0; j < 2; j++) { 
 
-        if (town.contains(citys[j])) {
-          piece++;
-        }
+  if (town.contains(citys[j])) {
+    piece++;
+  }
 
-    }
+}
     print("Sorguladığınız il dizide $piece adet bulunur");
 
 

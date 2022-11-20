@@ -19,7 +19,7 @@ if (strategy==1) {
     if (start==1) {
       play=0;
       while (userScore<100 && pcScore<100) {
-        dice=Random().nextInt(7);
+        dice=Random().nextInt(6)+1;
 
         if (play==0 && dice!=1) {
           userScore+=dice;
@@ -30,7 +30,7 @@ if (strategy==1) {
         else if(play==0 &&dice==1){
         play=1;
         }
-        dice=Random().nextInt(7);
+        dice=Random().nextInt(6)+1;
         if(play==1 && dice!=1){
         pcScore+=dice;
         }
@@ -43,7 +43,7 @@ if (strategy==1) {
     else if(start==2){
       play=1;
       while (userScore<100 && pcScore<100) {
-        dice=Random().nextInt(7);
+        dice=Random().nextInt(6)+1;
 
         if(play==1&&dice!=1){
           pcScore+=dice;
@@ -51,13 +51,13 @@ if (strategy==1) {
         else if(play==1&&dice==1){
           play=0;
         }
-        dice=Random().nextInt(7);
+        dice=Random().nextInt(6)+1;
         if (play==0&&dice!=1) {
             userScore+=dice;
             print("Eğer oyuna devam etmek istersen \"0\"ı \noyuna bilgisayar devam etsin istersen de \"1\"yi tuşla ");
             play=int.parse(stdin.readLineSync()!);         
         }
-        else if(play==0&&dice==1){
+        else if(play==0 && dice==1){
           play=1;
         }
         
@@ -85,7 +85,7 @@ else if(strategy==2){
         
         
         do {
-          dice=Random().nextInt(7);
+          dice=Random().nextInt(6)+1;
             if (play==0 && dice!=1) {
               userScore+=dice;
               userPoint+=dice;
@@ -102,7 +102,7 @@ else if(strategy==2){
         play=1;
         
         do {
-          dice=Random().nextInt(7);
+          dice=Random().nextInt(6)+1;
             if(play==1 && dice!=1){
               pcScore+=dice;
               pcPoint+=dice;
@@ -121,7 +121,7 @@ else if(strategy==2){
       play=1;
       while (pcScore<100 && userScore<100) {
         do {
-          dice=Random().nextInt(7);
+          dice=Random().nextInt(6)+1;
             if(play==1 && dice!=1){
               pcScore+=dice;
               pcPoint+=dice;
@@ -135,7 +135,7 @@ else if(strategy==2){
         play=0;
 
         do {
-          dice=Random().nextInt(7);
+          dice=Random().nextInt(6)+1;
             if (play==0 && dice!=1) {
               userScore+=dice;
               userPoint+=dice;
@@ -167,3 +167,5 @@ else{
   print("Hatalı bir giriş yaptınız.Tekrar deneyiniz");
 }
 }
+
+//dice=Random().nextInt(6)+1;

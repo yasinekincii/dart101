@@ -21,7 +21,7 @@ if (n>=3) {
       result=outerPolygon-interiorPolygon;
     
     
-    while(result<=delta){
+    while(result<delta){
       
      
      
