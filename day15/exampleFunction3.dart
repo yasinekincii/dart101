@@ -11,3 +11,4 @@ int factorial(number){
   }
   return value;
 }
+//main fonk içerisinde farklı bir fonk yazamazsın, sadece başka bir fonk çağırabilirsin

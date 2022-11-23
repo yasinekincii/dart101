@@ -5,14 +5,13 @@ void main(List<String> args) {
   print(text("yasin ekinci"));
 }
 
-String text(name){
+String text(String name){
   String vowels="a,e,ı,i,o,ö,u,ü";
-  int count=0;
   for (var i = 0; i < name.length; i++) {
     if(vowels.contains(name[i])){
-      count++;
+      //name[i]."*" ;
     }   
     
-  }return count.toString();
+  }return name;
 
 }

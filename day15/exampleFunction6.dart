@@ -1,10 +1,8 @@
 void main(List<String> args) {
 
  // Parametre olarak verelim sayıyı o sayıya baksın asal mı değil mi yazdırsın
-answer(6);
+answer(17);
 }
-
-
 void answer(int number){
   int control=0;
   for (var i = 2; i < number; i++) {
@@ -18,6 +16,4 @@ void answer(int number){
   else{
     print("Sayı asaldır");
   }
-
-
 }

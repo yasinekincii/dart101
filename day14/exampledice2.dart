@@ -20,10 +20,10 @@ void main(List<String> args) {
   // }
   // else{
   
-
+    dice=Random().nextInt(6)+1;
     while (userScore<100 && pcScore<100) {
 
-      dice=Random().nextInt(6)+1;
+      
       if (play==0 && dice!=1) {      
         userScore+=dice;
         print("Kullanıcı skoru:$userScore");
@@ -63,6 +63,7 @@ void main(List<String> args) {
         play=0;      
       }
       pcPoint=0;
+      dice=Random().nextInt(6)+1;
 
       if (userScore>=100) {
         print("Kullanıcı kazandı");           

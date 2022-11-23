@@ -10,7 +10,7 @@ print(sumOfNumbers(5));
 int sumOfNumbers(number){
   int sumOfEvenNumbers=0;
   for (var i = 0; i <number; i++) {
-    if (i%2==0) {
+    if (i.isEven) {
       sumOfEvenNumbers+=i;
     }
     

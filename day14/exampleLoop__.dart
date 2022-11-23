@@ -67,9 +67,6 @@ Map<String,dynamic>values2=<String,dynamic>{};
  trials.add(values2);
  print(trials);
 
-// for (var i = 0; i < trials.length; i++) {
-//  trials.map((i) => null);
-//   print(trials);
-// }
-//trials.forEach((element) { print(element);});
+
+//map yöntemi
 }
