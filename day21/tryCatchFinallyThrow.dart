@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main(List<String> args) {
   
-  //bu kodu bir dene burada hata olabilir bunu bir dene diyor
+  //bu kodu bir dene, burada hata olabilir bunu bir dene diyor
   try{//dene demek
     print("Lütfen bir sayı giriniz");
 
