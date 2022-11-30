@@ -19,11 +19,12 @@ class Student{
   String? lesson;
 
   Student(){
-    print("constuctor çalişti");
+    print("constuctor çalıştı");
   }
 
   void printStudentInfo(){
     print("Öğrencinin adı:$name , numarası $schoolNumber , ders $lesson");
+    
   }
 
 
