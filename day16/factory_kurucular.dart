@@ -28,6 +28,7 @@ class Ogrenci{
     print("İsimlendirilmiş kurucu çalıştı");
   }
 
+  //Factory sayesinde biz nesneler üretebiliyoruz kurucu yapısı aslında ama bunun diğerlerinden farkı return kullanabiliyoruz
   factory Ogrenci.factoryKurucusu(int id, String isim){
     if(id<0){
       return Ogrenci(5, isim);

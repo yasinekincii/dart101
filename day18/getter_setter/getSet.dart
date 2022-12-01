@@ -2,12 +2,11 @@
 import '../../day16/musteri.dart';
 import '../private/veritabaniIslemleri.dart';
 
-
 void main(List<String> args) {
 
   Musteri m1=Musteri(150);
   m1.bilgileriYazdir();
-  m1.musteriNoAta=952;
+  m1.musteriNoAta=952;//set old için böyle yazdık
   print(m1.musteriNoSoyle);
   //string döndürüyorsa print içinde yazdırmam lazım.
   //normal fonk olsaydı m1.musteriNoSoyle() diyip parantez açmamız gerekicekti ama get old için direkt böyle yazıyoruz

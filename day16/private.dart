@@ -13,6 +13,7 @@ void main(List<String> args) {
   print(m1.musteriNoSoyle);//get old için direkt böyle yazıyoruz fonksiyon olsa() yapmamız gerekirdi
 
   Musteri m2= Musteri(-999);
+  
   //m2.musteriNo=3456; doğru değil işlem yapmamak lazım
 
   //db.baglan();

@@ -14,7 +14,7 @@ class Musteri{
   }
 
   //getter'ın da yazımı bu
-  String get musteriNoSoyle{
+  String get musteriNoSoyle{//get old için süslü parantezlerimizi açtık
     return "Musteri no $_musteriNo";
   }
   String get musteriNoSoyle2 =>"musteri no: $_musteriNo";
