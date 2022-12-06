@@ -1,6 +1,7 @@
 void main(List<String> args) {
   ogrenci("elif", "F", 427,);
   ogrenci("Can", "C", 123,not1:23,not2:41);
+  ogrenci("bayram", "B", 123,not1:23);
 }
 
 ogrenci(String ad,String sinifi,int no,{double not1=1,double not2=1}){
