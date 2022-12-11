@@ -17,37 +17,37 @@ int play =int.parse(stdin.readLineSync()!);
 
 while(pcScore<100 && userScore<100){
 
-    print("Kullanıcı oynuyor");
+    
     dice=Random().nextInt(6)+1;
 
 
     if(play==0 && dice!=1){
        userPoint+=dice;
        print("Kullanıcının bu turdaki puanı:$userPoint");
-       print("Oyuna devam etmek için\"0\"ı tuşlayın \n oyun bilgisayara geçsin isterseniz de \"1\"i tuşlayınız ");
+       print("Oyuna devam etmek için\"0\"ı tuşlayın  oyun bilgisayara geçsin isterseniz de \"1\"i tuşlayınız ");
        play=int.parse(stdin.readLineSync()!);
-       if(play==1)
+        if(play==1)
        {  
-        userScore=userPoint;
+        userScore+=userPoint;
         userPoint=0;
         print("Kullanıcının skoru:$userScore");
        }
     }
 
-    else if(play==0 && dice==1){
+     if(play==0 && dice==1){
       play=1;
       userPoint=0;
     }
 
     ///////////////////////////////////////
-    print("PC oynuyor");
+    
     dice=Random().nextInt(6)+1;
 
     if(strategy==1 && play==1 && dice!=1){
       pcScore+=dice;
       print("Bilgisayarın skoru:$pcScore");
     } 
-    else if(strategy==1 && play==1 && dice!=1  ){
+    if(strategy==1 && play==1 && dice==1  ){
         play=0;
         print("Sıra Kullanıcıya geçti");
     }
@@ -63,7 +63,7 @@ while(pcScore<100 && userScore<100){
           pcPoint+=dice;
           print("Bilgisayarın skoru= $pcScore");
         }
-        else if(strategy==2 && play==1 && dice==1){
+        if(strategy==2 && play==1 && dice==1){
           play=0;
           print("Sıra kullanıcıya geçti");
         }
@@ -76,44 +76,14 @@ while(pcScore<100 && userScore<100){
     pcPoint=0;
 
 
+      if(userScore>100){
+      print("Kullanıcı Kazandı!!");
+      }
+      if(pcScore>100){
+        print("Bilgisayar Kazandı!!");
+      }
+
 
 }
-
-if(userScore>100){
-  print("Kullanıcı Kazandı!!");
-}
-if(pcScore>100){
-  print("Bilgisayar Kazandı!!");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
