@@ -22,11 +22,11 @@ class Database {
 }
 
 void main(List<String> args) {
-  var dbUser = Database("yasin", "gamzem12");
+  var dbUser = Database("yasin", "gam12");
   print(dbUser.userNameadcfbshdcns);
   print(dbUser.readUserPassword);
   // dbUser.kullaniciAdiDegistir = "benbirmalim";
   print(dbUser.userNameadcfbshdcns);
-  dbUser.changeUserName = "aptal";
+  dbUser.changeUserName = "ap";
   print(dbUser.userNameadcfbshdcns);
 }

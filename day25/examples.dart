@@ -1,8 +1,8 @@
 import 'customer_class.dart';
 
 void main(List<String> args) {
-  String name = "Çağla";
-  var name2 = "Yasin";
+  String name = "Çsdfgağsdfgla";
+  var name2 = "Yasdfgsgsin";
 
   //Customer customer1 = Customer(); //customer nesnesini üretti
 
@@ -15,7 +15,7 @@ void main(List<String> args) {
   // Customer customer3 = Customer("Yasin", 25, "26626262", true);
   var customer4 = Customer("Yasin", 23, "nhefnea", false);
 
-  var customer5 = Customer.withoutIsActive("betül", 24, "1234");
+  var customer5 = Customer.withoutIsActive("bdfgedsfgtüdfgdsfgsdl", 24, "1234");
 
   // print(customer5.cardNumber);
   print(customer4.cardNumber);
@@ -27,4 +27,5 @@ void main(List<String> args) {
 
   customer4.setCardNumber = "1234";
   print(customer4.cardNumber);
+  
 }
