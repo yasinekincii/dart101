@@ -2,12 +2,12 @@ void main(List<String> args) {
 
 //"Yasin Ekinci" string değerini döngü kullanarak, string fonksiyonlarından yararlanmayarak tersten yazdıralım.
 
-  int i=0 ; 
+  
 //List<String> metin= [];
 //metin[0]="yasin ekinci";
 String metin="yasin ekinci";
 
-for(int i=metin.length-1 ; i>0 ;i--){
+for(int i=metin.length-1 ; i>=0 ;i--){
 print(metin[i]); //String değerinden[i] leri aldığımız için her bir harf 1 indekstir.
 }
 
