@@ -3,11 +3,11 @@ import 'dart:math';
 
 void main(List<String> args) {
   
-  int pcScore=0;
-  int userScore=0;
+  int pcScore=0;//pc puanı
+  int userScore=0;//kullanıcı puanı
   int dice=0;
-  int pcPoint=0;
-  int userPoint=0;
+  int pcPoint=0;//tur skoru
+  int userPoint=0;//tur skoru
 
 print("Bilgisayarın Oynamasını istediğiniz stratejiyi giriniz.\n 1- 1 gelene kadar ve toplam puan 100'e ulaşana kadar zarı atmaya devam et. \n 2- 1 gelene kadar veya o turda alınan puan25'e ulaşana kadar devam et");
 int strategy=int.parse(stdin.readLineSync()!);
