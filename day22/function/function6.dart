@@ -1,7 +1,7 @@
 void main(List<String> args) {
   //Optional Parameter Function|Opsiyonel Parametre Alan Fonksiyon
 
-  int result=sum(10, 20, 30);
+  int result=sum(10, 20, 30,);
   print(result);
 }
 

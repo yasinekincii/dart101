@@ -4,7 +4,7 @@ class Database {
 
   Database(this._userName, this._userPassword);
 
-  String get userNameadcfbshdcns {
+  String get userName2 {
     return _userName ?? 'kullanıcı adı girilmemiş';
   }
 
@@ -23,10 +23,10 @@ class Database {
 
 void main(List<String> args) {
   var dbUser = Database("yasin", "gam12");
-  print(dbUser.userNameadcfbshdcns);
+  print(dbUser.userName2);
   print(dbUser.readUserPassword);
-  // dbUser.kullaniciAdiDegistir = "benbirmalim";
-  print(dbUser.userNameadcfbshdcns);
-  dbUser.changeUserName = "ap";
-  print(dbUser.userNameadcfbshdcns);
+  // dbUser.kullaniciAdiDegistir = "fenerbahçe";
+  print(dbUser.userName2);
+  dbUser.changeUserName = "galatasaray";
+  print(dbUser.userName2);
 }

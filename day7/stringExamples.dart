@@ -26,7 +26,7 @@ var s5 ="to know or note to know";
 var s6=s5.replaceAll("know","be");      //replace strings
 print(s6);
 
-var as4 =s4.split(" ");  //string list oldu kelime aralarına virül geldi 
+var as4 =s4.split(" ");  //string list oldu kelime aralarına virgül geldi. 
 print(as4);
 
 print("    stuff        ".trim());  //boşluklardan kurtuluyorsun

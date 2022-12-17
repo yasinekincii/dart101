@@ -9,8 +9,6 @@ calculate(count:300);
 }
 
 
-
-
 void calculate({int count=1}){
 
 double slength=0;// kısa parça uzunluğu
@@ -33,7 +31,5 @@ double sumlength=0;//kısa parçaların toplam değeri
 
   List<Map<int,double>>ortalama=[];
   Map<int,double>hesap=Map<int,double>();
-  hesap [count]=average;
-
- 
+  hesap [count]=average; 
 }

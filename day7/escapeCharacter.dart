@@ -29,12 +29,4 @@ print("hello\b\b\bWorld");
 //terminalde çapraz şekilde aşağı indirir
 print("eki\fnci\fyas\fin");
 print("yas\vin\v ekin\vci");
-
-
-
-
-
-
-
-
 }
