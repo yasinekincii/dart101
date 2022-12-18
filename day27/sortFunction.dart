@@ -8,7 +8,7 @@ void main(List<String> args) {
   //print(_myBranchListName);
   //////////////////
   
-  function("umarım iyileşir","Betül","Abim");  
+  function("umarım iyileşir","Btl","Abim");  
   function("en", "büyük", "fener");
 
 }
