@@ -2,46 +2,92 @@
 Notlar girildikten sonra, sınıfın ortalamasını, sınıftaki en yüksek ve en düşük notu alan kişiyi bulan ve ekranda gösteren programın kodunu yazınız. */
 
 
-import 'dart:io';
+
 
 void main(List<String> args) { 
 
   int ogrenciSayisi =5;
-  for (var i = 0; i < ogrenciSayisi; i++) {
+    
+   List<String> x=[];
+   List<double> y=[];
+   
 
-    String x=stdin.readLineSync()!;
-    double y=double.parse(stdin.readLineSync()!);
+    Map<String,double>sinif={};
+    sinif["yasin"]=50;
+    sinif["ahmet"]=60;
+    sinif["Mehmet"]=70;
+    sinif["veli"]=80;
+    sinif["Can"]=90;
 
-    Bismillah s =Bismillah(x, y,ogrenciSayisi);  
+    for (var element in sinif.keys) {
+      x.add(element);      
+    }
+
+    for (var element in sinif.values) {
+      y.add(element);      
+    }
+
+    Bis s =Bis(y,x,ogrenciSayisi);  
     s.ortalamaHesabi();
     s.siniftakiEnDusukVeYuksekNotlar();   
-  } 
+  
 
 }
 
-class Bismillah{
-  String? ogrIsmi;
-  double? not;
+class Bis{
+  List<String> ogrIsmi;
+  List<double> not;
   int? ogrSayisi;
-  Map<dynamic,dynamic>sinif={};//??????????????
+  Map<dynamic,dynamic>sinif={};
 
-  Bismillah(this.ogrIsmi,this.not,this.ogrSayisi){  
-       sinif.addAll({ogrIsmi:not});//???????????
+    Bis(this.not,this.ogrIsmi,this.ogrSayisi){  
+       sinif.addAll({not:ogrIsmi});
   }
 
   void ortalamaHesabi(){
     double sum=0;
-    for (var i = 0; i < this.ogrSayisi!; i++) {
-      
-      for (double element in sinif.values) {//neden int yaptık elementi
-        sum+=element;
-      }              
+    for(int i=0 ; i<ogrSayisi! ; i++){
+        sum = sum+not[i];
     }
-   print("Ortalama=${sum/ogrSayisi!}}"); 
+    print("Ortalama= ${sum/ogrSayisi!}");
   }
 
   void siniftakiEnDusukVeYuksekNotlar(){
-      int enBuyuk=0;
+      
+      double enBuyuk=0;
+      double enKucuk=100;
+      
+      for(int i=0 ; i<ogrSayisi! ; i++){
+          if(not[i]>enBuyuk){
+            enBuyuk=not[i];
+          }
+          if(not[i]<enKucuk){
+            enKucuk=not[i];
+          }          
+      }     
+
+      print("Sinifta en düsük notu alan= ${sinif[enKucuk]}, en yuksek notu alan ise= ${sinif[enBuyuk]}");
+
+        /* for (var element in sinif.keys) {
+
+         print("Sinifta en düsük notu alan= ${element[enKucuk]}, en yuksek notu alan ise= ${element[enBuyuk]}");
+        
+        }     */
+  }
+}
+
+
+
+/* double sum=0;
+    for (var i = 0; i < this.ogrSayisi!; i++) {
+      
+      for (var element in sinif.values) {//neden int yaptık elementi
+        sum+=element;
+      }              
+    }
+   print("Ortalama=${sum/ogrSayisi!}}");  */
+
+   /* int enBuyuk=0;
       int enKucuk=100;
 
     for (var i = 0; i < ogrSayisi!; i++) {
@@ -55,6 +101,4 @@ class Bismillah{
         }
       }     
     }
-    print("En düşük not alan kisi= ${sinif[enKucuk]} , En yüksek not alan kisi=${sinif[enBuyuk]}");
-  }
-}
+    print("En düşük not alan kisi= ${sinif[enKucuk]} , En yüksek not alan kisi=${sinif[enBuyuk]}"); */

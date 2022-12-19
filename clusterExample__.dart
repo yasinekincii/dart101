@@ -19,6 +19,8 @@ bir metni kümeye dönüştüren constructor yazalım.
 
 import 'dart:js_util';
 
+import 'example__.dart';
+
 void main(List<String> args) {
   
 
@@ -69,7 +71,7 @@ class Kume{
 
   //-kümenin alt küme sayisini döndüren bir metot yazalım.?????????????????????????????????????
   void altKumeSayisi(){
-    
+      
   }
 
   //-İki kümeyi birleştiren metot yazalım.
