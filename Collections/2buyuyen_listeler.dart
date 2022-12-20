@@ -20,7 +20,7 @@ main(List<String> args) {
   print(sayilar);
   print(sayilar.length);//listemin kaç elemanlı olduğunu söylicek
   sayilar.length = 100;//böyle arttırabilirim ama sonucunda hata alıcağım.Çünkü length 100 olduğunda 96 değer null olucak
-  //ama List<in?> yaparsam herhangi bir sıkıntı çıkmaz soru işareti sayesinde
+  //ama List<int?> yaparsam herhangi bir sıkıntı çıkmaz soru işareti sayesinde
 
   List<int> sayilar2 = [1, 2, 3];//bu şekilde dinamik uzunluklu bir liste oluşturduk
   sayilar2.add(55);
