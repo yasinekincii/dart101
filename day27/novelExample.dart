@@ -3,7 +3,7 @@
 //bulan programı kodlayınız.
 
 void main(List<String> args) {
- print(numberOfPagesRead(10,5,100));
+ print(numberOfPagesRead(10,5,1000));
 }
 
 //Kişi ilk gün 10 sayfa okumuştur.(FirstDayRead)

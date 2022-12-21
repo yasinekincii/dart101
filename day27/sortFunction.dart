@@ -8,17 +8,19 @@ void main(List<String> args) {
   //print(_myBranchListName);
   //////////////////
   
-  function("umarım iyileşir","Btl","Abim");  
-  function("en", "büyük", "fener");
+  functionReplace(["umarım","Brf","Abim"]);  
+  functionReplace(["en", "büyük", "fener"]);
 
 }
 
- function(String firstWord,String secondWord,String thirdWord ){
+ functionReplace(List<String>words){
 
-  List<String>words=[];
+  //String firstWord,String secondWord,String thirdWord 
+
+  /* List<String>words=[];
   words.add(firstWord);
   words.add(secondWord);
-  words.add(thirdWord);
+  words.add(thirdWord); */
   
   words.sort();  
 

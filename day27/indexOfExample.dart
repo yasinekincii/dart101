@@ -9,7 +9,9 @@ void main(List<String> args) {
 }
 
 int find(String str,[int pos=0]){
-String x="büyük";
+String x="een";
+
+
 
 
 
