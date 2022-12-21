@@ -17,12 +17,27 @@ bir metni kümeye dönüştüren constructor yazalım.
 
 
 
-import 'dart:js_util';
 
-import 'example__.dart';
+
+
+
+
 
 void main(List<String> args) {
   
+  Kume x=Kume();
+  Kume y=Kume.metniKumeyeDonustur(["a"]);
+  Kume z=Kume.tekElemanliKumeContructor(3);
+  
+  x=Kume.metniKumeyeDonustur(["b"]);
+
+
+  y.girilenMetinKumedeVarMi("x");
+  z.kumeninElemanSayisi();
+  x.KumeBosMu();
+  x.altKumeSayisi();
+  x.kumeninElemaniMiKontrol("a");
+ 
 
 }
 
@@ -30,19 +45,21 @@ void main(List<String> args) {
 class Kume{
 
   List<String>harf=[];
-  int? elemanSayisi;
+  int elemanSayisi=0;
 
-
+  //Boş küme construcor,
   Kume(){
     print("Kurucu constructor çalisti.");
   }
 
+  //tek elemanlı küme constructorı,
   Kume.tekElemanliKumeContructor(this.elemanSayisi){
       print(elemanSayisi);
   }
 
-  Kume.metniKumeyeDonustur(String metin){
-    harf.add(metin);
+  //bir metni kümeye dönüştüren constructor yazalım.
+  Kume.metniKumeyeDonustur(this.harf){
+    
   }
 
 
@@ -62,22 +79,30 @@ class Kume{
 
   //-Kümenin boş olup olmadığını kontrol eden metot yazalım. Küme boşsa 1, değilse 0 döndürsün.
   void KumeBosMu(){
-      if(harf.isEmpty==true && elemanSayisi==null){
+      if(harf.isEmpty==true && elemanSayisi==0){
         print("Kümemiz boş: 1");
       }else{
         print("Küme boş değil: 0");
       }
   }
 
-  //-kümenin alt küme sayisini döndüren bir metot yazalım.?????????????????????????????????????
+  //-kümenin alt küme sayisini döndüren bir metot yazalım.
   void altKumeSayisi(){
+    if(elemanSayisi>0){
+      print("Alt küme sayisi= ${2*elemanSayisi}");
+    }
+    if(harf.length>0){
+      print("Alt küme sayisi= ${harf.length}");
+    }  
       
   }
 
   //-İki kümeyi birleştiren metot yazalım.
   void ikiKumeyiBirlestir(){
-    String name=add(Kume.metniKumeyeDonustur(elemanSayisi.toString()), Kume.tekElemanliKumeContructor(elemanSayisi));
-    print(name);
+    
+    Map<List<String>,int>deneme={};
+    
+    
   }
 
   //-Verilen eleman kümenin elamanı mı kontrol eden metot yazalım.

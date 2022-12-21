@@ -37,19 +37,21 @@ void main(List<String> args) {
 class Bis{
   List<String> ogrIsmi;
   List<double> not;
-  int? ogrSayisi;
-  Map<dynamic,dynamic>sinif={};
+  int ogrSayisi=20;
+  Map<List<double>,List<String>>sinif={};
 
-    Bis(this.not,this.ogrIsmi,this.ogrSayisi){  
-       sinif.addAll({not:ogrIsmi});
+    Bis(this.not,this.ogrIsmi,this.ogrSayisi){
+
+      
+
   }
 
   void ortalamaHesabi(){
     double sum=0;
-    for(int i=0 ; i<ogrSayisi! ; i++){
+    for(int i=0 ; i<ogrSayisi ; i++){
         sum = sum+not[i];
     }
-    print("Ortalama= ${sum/ogrSayisi!}");
+    print("Ortalama= ${sum/ogrSayisi}");
   }
 
   void siniftakiEnDusukVeYuksekNotlar(){
@@ -57,7 +59,7 @@ class Bis{
       double enBuyuk=0;
       double enKucuk=100;
       
-      for(int i=0 ; i<ogrSayisi! ; i++){
+      for(int i=0 ; i<ogrSayisi ; i++){
           if(not[i]>enBuyuk){
             enBuyuk=not[i];
           }
@@ -67,6 +69,7 @@ class Bis{
       }     
 
       print("Sinifta en düsük notu alan= ${sinif[enKucuk]}, en yuksek notu alan ise= ${sinif[enBuyuk]}");
+      print(sinif[enKucuk]);
 
         /* for (var element in sinif.keys) {
 
